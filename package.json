@@ -44,8 +44,10 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/color-palette": "latest",
-    "@unocss/core": "latest"
+    "@soybeanjs/color-palette": "^0.2.1",
+    "@unocss/core": "^66.5.4",
+    "@unocss/preset-mini": "^66.5.4",
+    "colord": "^2.9.3"
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.4.1",

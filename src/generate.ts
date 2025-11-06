@@ -1,6 +1,7 @@
 import { mergeDeep } from '@unocss/core';
-import { colord, generateColorPalette } from '@soybeanjs/color-palette';
-import themes from './theme.json';
+import { generateTailwindPalette } from '@soybeanjs/color-palette';
+import { colord } from 'colord';
+import { themes } from './theme';
 import type {
   ColorOptions,
   FeedbackColorOfThemeCssVarKey,
@@ -12,11 +13,8 @@ import type {
   SidebarColorOfThemeCssVarsVariant,
   ThemeCSSVarKey,
   ThemeCSSVars,
-  ThemeCSSVarsVariant,
-  ThemeConfig
+  ThemeCSSVarsVariant
 } from './types';
-
-const builtinThemes = themes as ThemeConfig[];
 
 type CSSVarKey = ThemeCSSVarKey | FeedbackColorOfThemeCssVarKey | SidebarColorOfThemeCssVarKey;
 
@@ -74,7 +72,7 @@ function getColorCSSVars(color: ThemeCSSVars & FeedbackColorOfThemeCssVars & Sid
       if (themeColorKeys.includes(key)) {
         const hsl = `hsl(${value.split(' ').join(', ')})`;
 
-        const colorPalette = generateColorPalette(hsl);
+        const colorPalette = generateTailwindPalette(hsl);
 
         for (const [num, hex] of Object.entries(colorPalette)) {
           const { h, s, l } = colord(hex).toHsl();
@@ -149,7 +147,7 @@ body {
 }
 
 function getBuiltInTheme(name: string): ThemeCSSVarsVariant {
-  const theme = builtinThemes.find(t => t.name === name);
+  const theme = themes.find(t => t.name === name);
 
   if (!theme) {
     throw new Error(`Unknown color: ${name}`);

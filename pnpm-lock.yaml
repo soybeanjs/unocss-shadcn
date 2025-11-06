@@ -9,11 +9,17 @@ importers:
   .:
     dependencies:
       '@soybeanjs/color-palette':
-        specifier: latest
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
       '@unocss/core':
-        specifier: latest
+        specifier: ^66.5.4
         version: 66.5.4
+      '@unocss/preset-mini':
+        specifier: ^66.5.4
+        version: 66.5.4
+      colord:
+        specifier: ^2.9.3
+        version: 2.9.3
     devDependencies:
       '@soybeanjs/cli':
         specifier: 1.4.1
@@ -471,8 +477,8 @@ packages:
     resolution: {integrity: sha512-SPIJVoqR1XQD+yzXxGkoCAFaftDgGGcgG2qHAgnlG4p0u/5PCQDzp0V1BPBFYx/V3Tj2/beWbV2//tINRpF13Q==}
     hasBin: true
 
-  '@soybeanjs/color-palette@0.2.0':
-    resolution: {integrity: sha512-bXj1GmErHfiIpdEuOaf/dliEw8P7m5o2xjLmmQreId+KsXcXfmfYHA2YdFUWMIqDfVYinXmDa/GSCBdOEo+M7A==}
+  '@soybeanjs/color-palette@0.2.1':
+    resolution: {integrity: sha512-FLxgeWfHWz07OdI2Ctrwb6JuZZvCzQhprDXPeTPCWYFXZFKWFWSlVZDwQwpz+/2f8768833K+aN9q+2KjfLiwQ==}
 
   '@soybeanjs/eslint-config@1.7.1':
     resolution: {integrity: sha512-Sp7ST3L2C+2CeF5Q/1gyQ3aziUmKWSRWFL5PNfURjfXdjJVJ778h98PcC2++w7H05033AvDYCNtF+07+wiU/RQ==}
@@ -601,6 +607,16 @@ packages:
 
   '@unocss/core@66.5.4':
     resolution: {integrity: sha512-UDS2CRgyQCEFH+5kStDyJd7OFtgkIUZYn5Ahr5z7v3jc/pEfeOJ0mxsNAr+FgMS/xb17vy4sVFvx3jj/FwMZ1A==}
+
+  '@unocss/extractor-arbitrary-variants@66.5.4':
+    resolution: {integrity: sha512-JsgITF11Z2WdXzF8eO2/qkcFIff/dEEc9C2eKYOSUv5pe+RMZxXHoAw4x+D4n0UrGAbHpoUVaJ8E7kG0ayTbGw==}
+
+  '@unocss/preset-mini@66.5.4':
+    resolution: {integrity: sha512-KaBGsw3+Pi5ZTsp5u0OrUUUXFVltHin02cYhv3A4b9392Kej5R3y7zIf1VjiQ3ZXR4KZWfv0CQj0LBqIqAJ5WA==}
+
+  '@unocss/rule-utils@66.5.4':
+    resolution: {integrity: sha512-LFzLuXQfZKI/qJBrsqkaVKlw0ECU8Xw7m+MaKIKyFH/hqggzkvNG0PyWU2HnPNzz1dIiVBn+Epfpz8pzi+MLFA==}
+    engines: {node: '>=14'}
 
   '@unrs/resolver-binding-android-arm-eabi@1.11.1':
     resolution: {integrity: sha512-ppLRUgHVaGRWUx0R0Ut06Mjo9gBaBkg3v/8AxusGLhsIotbBLuRk51rAzqLC8gq6NyyAojEXglNjzf6R948DNw==}
@@ -2245,7 +2261,7 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@soybeanjs/color-palette@0.2.0':
+  '@soybeanjs/color-palette@0.2.1':
     dependencies:
       colord: 2.9.3
 
@@ -2386,6 +2402,21 @@ snapshots:
       eslint-visitor-keys: 4.2.1
 
   '@unocss/core@66.5.4': {}
+
+  '@unocss/extractor-arbitrary-variants@66.5.4':
+    dependencies:
+      '@unocss/core': 66.5.4
+
+  '@unocss/preset-mini@66.5.4':
+    dependencies:
+      '@unocss/core': 66.5.4
+      '@unocss/extractor-arbitrary-variants': 66.5.4
+      '@unocss/rule-utils': 66.5.4
+
+  '@unocss/rule-utils@66.5.4':
+    dependencies:
+      '@unocss/core': 66.5.4
+      magic-string: 0.30.21
 
   '@unrs/resolver-binding-android-arm-eabi@1.11.1':
     optional: true

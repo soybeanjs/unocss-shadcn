@@ -22,6 +22,7 @@ export type ThemeCSSVars = {
   border: HslColorString;
   input: HslColorString;
   ring: HslColorString;
+  radius?: string;
 };
 
 export type ThemeCSSVarKey = keyof ThemeCSSVars;

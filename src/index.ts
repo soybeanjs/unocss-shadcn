@@ -1,7 +1,7 @@
 import type { Preset } from '@unocss/core';
-import type { Theme } from 'unocss/preset-mini';
+import type { Theme } from '@unocss/preset-mini';
 import { generateCSSVars, generateGlobalStyles } from './generate';
-import themes from './theme.json';
+import { themes } from './theme';
 import type { PresetShadcnOptions, ThemeColorKey, ThemeConfig, ThemeConfigColor, ThemeOptions } from './types';
 
 export const builtinColors = themes.map(theme => theme.name) as ThemeConfigColor[];
@@ -15,12 +15,12 @@ export const builtinColorMap = themes.reduce(
 export const builtinRadiuses = [0, 0.3, 0.5, 0.75, 1] as const;
 
 /**
- * The UnoCSS preset for Soybean UI.
+ * The UnoCSS preset of shadcn style.
  *
  * @param options - The options for the preset.
  * @param globals - Whether to generate global variables, like *.border-color, body.color, body.background.
  */
-export function presetSoybeanUI(options: PresetShadcnOptions = {}, globals = true): Preset<Theme> {
+export function presetShadcn(options: PresetShadcnOptions = {}, globals = true): Preset<Theme> {
   return {
     name: 'unocss-preset-soybean-ui',
     preflights: [
@@ -228,6 +228,6 @@ export function presetSoybeanUI(options: PresetShadcnOptions = {}, globals = tru
 
 export { generateCSSVars };
 
-export default presetSoybeanUI;
+export default presetShadcn;
 
 export type { ThemeConfig, ThemeColorKey, ThemeConfigColor, PresetShadcnOptions, ThemeOptions };

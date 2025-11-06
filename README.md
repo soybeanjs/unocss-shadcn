@@ -1,3 +1,3 @@
 # @soybean-ui/unocss-preset
 
-Unocss preset for Soybean UI
+the unocss preset of shadcn style.
