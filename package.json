@@ -1,0 +1,68 @@
+{
+  "name": "@soybeanjs/unocss-shadcn",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.20.0",
+  "description": "unocss preset for Soybean UI",
+  "author": {
+    "name": "Soybean",
+    "email": "soybeanjs@outlook.com",
+    "url": "https://github.com/soybeanjs"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/soybeanjs/unocss-shadcn",
+  "repository": {
+    "url": "https://github.com/soybeanjs/unocss-shadcn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soybeanjs/unocss-shadcn/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsdown",
+    "cleanup": "soy cleanup",
+    "commit": "soy git-commit",
+    "dev": "tsdown",
+    "lint": "eslint . --fix",
+    "prepare": "simple-git-hooks",
+    "publish-pkg": "pnpm publish --access public",
+    "release": "soy release",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "update-pkg": "soy ncu"
+  },
+  "dependencies": {
+    "@soybeanjs/color-palette": "latest",
+    "@unocss/core": "latest"
+  },
+  "devDependencies": {
+    "@soybeanjs/cli": "1.4.1",
+    "@soybeanjs/eslint-config": "1.7.1",
+    "@types/node": "24.10.0",
+    "eslint": "9.39.1",
+    "lint-staged": "16.2.6",
+    "simple-git-hooks": "2.13.1",
+    "tsdown": "0.16.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm soy git-commit-verify",
+    "pre-commit": "pnpm typecheck && pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
