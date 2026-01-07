@@ -12,7 +12,7 @@ export const builtinColorMap = themes.reduce(
   },
   {} as Record<ThemeConfigColor, string>
 );
-export const builtinRadiuses = [0, 0.3, 0.5, 0.75, 1] as const;
+export const builtinRadiuses = [0, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1] as const;
 
 /**
  * The UnoCSS preset of shadcn style.
