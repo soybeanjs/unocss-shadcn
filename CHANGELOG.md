@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.0.3](https://github.com/soybeanjs/unocss-shadcn/compare/v0.0.2...v0.0.3) (2026-01-08)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **tsdown**: add fixedExtension option to configuration &nbsp;-&nbsp; by @soybeanjs [<samp>(44faa)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/44faa48)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.0.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.0.1...v0.0.2) (2026-01-08)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
