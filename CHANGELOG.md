@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.1.1](https://github.com/soybeanjs/unocss-shadcn/compare/v0.1.0...v0.1.1) (2026-01-08)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **types**: enhance presetShadcn type definition to include Theme for better type safety &nbsp;-&nbsp; by @soybeanjs [<samp>(e1490)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/e1490ef)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.1.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.0.4...v0.1.0) (2026-01-08)
 
 ### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
