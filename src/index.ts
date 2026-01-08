@@ -1,4 +1,5 @@
 import { definePreset } from 'unocss';
+import type { Theme } from 'unocss/preset-mini';
 import { generateCSSVars, generateGlobalStyles } from './generate';
 import { themes } from './theme';
 import type { PresetShadcnOptions, ThemeColorKey, ThemeConfig, ThemeConfigColor, ThemeOptions } from './types';
@@ -13,7 +14,7 @@ export const builtinColorMap = themes.reduce(
 );
 export const builtinRadiuses = [0, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1] as const;
 
-export const presetShadcn = definePreset((options: PresetShadcnOptions = {}) => {
+export const presetShadcn = definePreset<PresetShadcnOptions, Theme>((options: PresetShadcnOptions = {}) => {
   const { theme, globals = true, generatePreflights = true } = options;
   return {
     name: 'unocss-preset-soybean-ui',
