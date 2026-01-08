@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.1.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.0.4...v0.1.0) (2026-01-08)
+
+### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
+
+- **generate**: update generateCSSVars to accept ThemeOptions and enhance PresetShadcnOptions interface &nbsp;-&nbsp; by @soybeanjs [<samp>(2b9fe)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/2b9fefb)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.0.4](https://github.com/soybeanjs/unocss-shadcn/compare/v0.0.3...v0.0.4) (2026-01-08)
 
 ### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
