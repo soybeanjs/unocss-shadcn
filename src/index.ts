@@ -1,5 +1,5 @@
-import type { Preset } from '@unocss/core';
-import type { Theme } from '@unocss/preset-mini';
+import type { Preset } from 'unocss';
+import type { Theme } from 'unocss/preset-mini';
 import { generateCSSVars, generateGlobalStyles } from './generate';
 import { themes } from './theme';
 import type { PresetShadcnOptions, ThemeColorKey, ThemeConfig, ThemeConfigColor, ThemeOptions } from './types';
@@ -227,7 +227,5 @@ export function presetShadcn(options: PresetShadcnOptions = {}, globals = true):
 }
 
 export { generateCSSVars };
-
-export default presetShadcn;
 
 export type { ThemeConfig, ThemeColorKey, ThemeConfigColor, PresetShadcnOptions, ThemeOptions };
