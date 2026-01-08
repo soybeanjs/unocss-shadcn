@@ -123,7 +123,25 @@ export interface ThemeOptions {
   darkSelector?: string;
 }
 
-export type PresetShadcnOptions = ThemeOptions | ThemeOptions[];
+export interface PresetShadcnOptions {
+  /**
+   * theme options
+   */
+  theme?: ThemeOptions | ThemeOptions[];
+  /**
+   * Whether to generate global variables, like *.border-color, body.color, body.background.
+   * @default true
+   */
+  globals?: boolean;
+  /**
+   * Whether to generate preflights.
+   *
+   * Add css variables to html tag, like --background, --foreground, etc.
+   *
+   * @default true
+   */
+  generatePreflights?: boolean;
+}
 
 export type ThemeColorKey =
   | Extract<ThemeCSSVarKey, 'primary' | 'secondary' | 'destructive'>

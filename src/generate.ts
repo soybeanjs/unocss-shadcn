@@ -7,13 +7,13 @@ import type {
   FeedbackColorOfThemeCssVarKey,
   FeedbackColorOfThemeCssVars,
   FeedbackColorOfThemeCssVarsVariant,
-  PresetShadcnOptions,
   SidebarColorOfThemeCssVarKey,
   SidebarColorOfThemeCssVars,
   SidebarColorOfThemeCssVarsVariant,
   ThemeCSSVarKey,
   ThemeCSSVars,
-  ThemeCSSVarsVariant
+  ThemeCSSVarsVariant,
+  ThemeOptions
 } from './types';
 
 type CSSVarKey = ThemeCSSVarKey | FeedbackColorOfThemeCssVarKey | SidebarColorOfThemeCssVarKey;
@@ -138,11 +138,6 @@ body {
   color: hsl(var(--foreground));
   background: hsl(var(--background));
 }
-
-.lucide {
-  width: 1.25em;
-  height: 1.25em;
-}
 `;
 }
 
@@ -231,7 +226,7 @@ function createBuiltinSidebarColorTheme() {
   return sidebarColor;
 }
 
-export function generateCSSVars(theme: PresetShadcnOptions, onlyOne = true): string {
+export function generateCSSVars(theme: ThemeOptions | ThemeOptions[] = {}, onlyOne = true): string {
   if (Array.isArray(theme)) {
     return theme.map(t => generateCSSVars(t, false)).join('\n');
   }

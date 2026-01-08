@@ -1,5 +1,4 @@
-import type { Preset } from 'unocss';
-import type { Theme } from 'unocss/preset-mini';
+import { definePreset } from 'unocss';
 import { generateCSSVars, generateGlobalStyles } from './generate';
 import { themes } from './theme';
 import type { PresetShadcnOptions, ThemeColorKey, ThemeConfig, ThemeConfigColor, ThemeOptions } from './types';
@@ -14,30 +13,26 @@ export const builtinColorMap = themes.reduce(
 );
 export const builtinRadiuses = [0, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1] as const;
 
-/**
- * The UnoCSS preset of shadcn style.
- *
- * @param options - The options for the preset.
- * @param globals - Whether to generate global variables, like *.border-color, body.color, body.background.
- */
-export function presetShadcn(options: PresetShadcnOptions = {}, globals = true): Preset<Theme> {
+export const presetShadcn = definePreset((options: PresetShadcnOptions = {}) => {
+  const { theme, globals = true, generatePreflights = true } = options;
   return {
     name: 'unocss-preset-soybean-ui',
-    preflights: [
-      {
-        getCSS: () => `
+    preflights: generatePreflights
+      ? [
+          {
+            getCSS: () => `
           @keyframes shadcn-down { from{ height: 0 } to { height: var(--soybean-accordion-content-height)} }
           @keyframes shadcn-up { from{ height: var(--soybean-accordion-content-height)} to { height: 0 } }
           @keyframes shadcn-collapsible-down { from{ height: 0 } to { height: var(--soybean-collapsible-content-height)} }
           @keyframes shadcn-collapsible-up { from{ height: var(--soybean-collapsible-content-height)} to { height: 0 } }
 
-          ${generateCSSVars(options)}
+          ${generateCSSVars(theme)}
 
           ${globals ? generateGlobalStyles() : ''}
         `
-      },
-      {
-        getCSS: () => `
+          },
+          {
+            getCSS: () => `
           html.size-xs {
             font-size: 12px;
           }
@@ -57,8 +52,9 @@ export function presetShadcn(options: PresetShadcnOptions = {}, globals = true):
             font-size: 24px;
           }
         `
-      }
-    ],
+          }
+        ]
+      : [],
     rules: [
       [
         'animate-accordion-down',
@@ -224,7 +220,7 @@ export function presetShadcn(options: PresetShadcnOptions = {}, globals = true):
       }
     }
   };
-}
+});
 
 export { generateCSSVars };
 
