@@ -1,4 +1,4 @@
-import { mergeDeep } from '@unocss/core';
+import { mergeDeep } from 'unocss';
 import { generateTailwindPalette } from '@soybeanjs/color-palette';
 import { colord } from 'colord';
 import { themes } from './theme';
