@@ -1,18 +1,7 @@
 import { definePreset } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
 import { generateCSSVars, generateGlobalStyles } from './generate';
-import { themes } from './theme';
 import type { PresetShadcnOptions, ThemeColorKey, ThemeConfig, ThemeConfigColor, ThemeOptions } from './types';
-
-export const builtinColors = themes.map(theme => theme.name) as ThemeConfigColor[];
-export const builtinColorMap = themes.reduce(
-  (acc, theme) => {
-    acc[theme.name as ThemeConfigColor] = theme.cssVars.light.primary;
-    return acc;
-  },
-  {} as Record<ThemeConfigColor, string>
-);
-export const builtinRadiuses = [0, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1] as const;
 
 export const presetShadcn = definePreset<PresetShadcnOptions, Theme>((options: PresetShadcnOptions = {}) => {
   const { theme, globals = true, generatePreflights = true } = options;
@@ -222,7 +211,5 @@ export const presetShadcn = definePreset<PresetShadcnOptions, Theme>((options: P
     }
   };
 });
-
-export { generateCSSVars };
 
 export type { ThemeConfig, ThemeColorKey, ThemeConfigColor, PresetShadcnOptions, ThemeOptions };
