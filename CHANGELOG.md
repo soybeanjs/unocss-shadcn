@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.2.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.1.2...v0.2.0) (2026-01-14)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **shared**: add shared module for theme colors and radiuses &nbsp;-&nbsp; by @soybeanjs [<samp>(436bf)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/436bf98)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.1.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.1.1...v0.1.2) (2026-01-14)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
