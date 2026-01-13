@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.1.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.1.1...v0.1.2) (2026-01-14)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **generate**: update import from @unocss/core to unocss &nbsp;-&nbsp; by @soybeanjs [<samp>(62010)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/62010ea)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.1.1](https://github.com/soybeanjs/unocss-shadcn/compare/v0.1.0...v0.1.1) (2026-01-08)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
