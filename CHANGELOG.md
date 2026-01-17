@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.1](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.0...v0.3.1) (2026-01-17)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **index**: update presetShadcn definition to use a function for enhanced configuration &nbsp;-&nbsp; by @soybeanjs [<samp>(03a30)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/03a30ed)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.3.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.2.0...v0.3.0) (2026-01-17)
 
 ### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
