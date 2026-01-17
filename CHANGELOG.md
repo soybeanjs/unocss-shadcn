@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.2.0...v0.3.0) (2026-01-17)
+
+### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
+
+- **projects**: remove theme and shared files, update types and configuration &nbsp;-&nbsp; by @soybeanjs [<samp>(94c85)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/94c855e)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.2.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.1.2...v0.2.0) (2026-01-14)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
