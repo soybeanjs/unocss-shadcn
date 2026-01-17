@@ -1,7 +1,7 @@
 import { definePreset } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
 
-export const presetShadcn = definePreset<Theme>({
+export const presetShadcn = definePreset<Theme>(() => ({
   name: 'unocss-preset-shadcn',
   preflights: [
     {
@@ -213,4 +213,4 @@ export const presetShadcn = definePreset<Theme>({
       '2xs': ['0.625rem', '0.75rem']
     }
   }
-});
+}));
