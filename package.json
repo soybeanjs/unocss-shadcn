@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.2.0",
   "packageManager": "pnpm@10.27.0",
-  "description": "unocss preset for Soybean UI",
+  "description": "unocss preset shadcn for Soybean UI",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
@@ -25,11 +25,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.js"
-    },
-    "./shared": {
-      "types": "./dist/shared.d.ts",
-      "import": "./dist/shared.js",
-      "require": "./dist/shared.js"
     }
   },
   "main": "dist/index.js",
@@ -49,8 +44,6 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/color-palette": "^0.2.1",
-    "colord": "^2.9.3",
     "unocss": "^66.5.12"
   },
   "devDependencies": {

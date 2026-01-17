@@ -1,13 +1,11 @@
 import { defineConfig } from 'tsdown';
-import pkg from './package.json' with { type: 'json' };
 
 export default defineConfig({
-  entry: ['src/index.ts', 'src/shared.ts'],
-  external: [...Object.keys(pkg.dependencies), '@unocss/core'],
+  entry: ['src/index.ts'],
+  external: ['unocss'],
   platform: 'neutral',
   clean: true,
   dts: true,
   sourcemap: false,
-  minify: true,
-  fixedExtension: false
+  minify: true
 });
