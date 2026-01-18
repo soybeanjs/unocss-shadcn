@@ -94,8 +94,8 @@ export const presetShadcn = definePreset<Theme>(() => ({
         DEFAULT: 'hsl(var(--accent))',
         foreground: 'hsl(var(--accent-foreground))'
       },
-      border: 'hsl(var(--border))',
-      input: 'hsl(var(--input))',
+      border: 'hsl(var(--border) / var(--border-alpha, 1))',
+      input: 'hsl(var(--input) / var(--input-alpha, 1))',
       ring: 'hsl(var(--ring))',
       primary: {
         DEFAULT: 'hsl(var(--primary))',
@@ -193,7 +193,7 @@ export const presetShadcn = definePreset<Theme>(() => ({
       'sidebar-primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
       'sidebar-accent': 'hsl(var(--sidebar-accent))',
       'sidebar-accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-      'sidebar-border': 'hsl(var(--sidebar-border))',
+      'sidebar-border': 'hsl(var(--sidebar-border) / var(--sidebar-border-alpha, 1))',
       'sidebar-ring': 'hsl(var(--sidebar-ring))',
       'chart-1': 'hsl(var(--chart-1))',
       'chart-2': 'hsl(var(--chart-2))',
