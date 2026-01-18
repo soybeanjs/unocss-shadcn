@@ -7,7 +7,7 @@ export const presetShadcn = definePreset<Theme>(() => ({
     {
       getCSS: () => `
       * {
-        border-color: hsl(var(--border));
+        border-color: hsl(var(--border) / var(--border-alpha, 1));
       }
 
       body {
