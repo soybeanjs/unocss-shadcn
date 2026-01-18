@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.3.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.1...v0.3.2) (2026-01-18)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: update color definitions to support alpha transparency &nbsp;-&nbsp; by @soybeanjs [<samp>(95e6f)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/95e6f64)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.3.1](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.0...v0.3.1) (2026-01-17)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
