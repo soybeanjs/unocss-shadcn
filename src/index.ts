@@ -187,7 +187,7 @@ export const presetShadcn = definePreset<Theme>(() => ({
         900: 'hsl(var(--carbon-900))',
         950: 'hsl(var(--carbon-950))'
       },
-      sidebar: 'hsl(var(--sidebar-background))',
+      sidebar: 'hsl(var(--sidebar))',
       'sidebar-foreground': 'hsl(var(--sidebar-foreground))',
       'sidebar-primary': 'hsl(var(--sidebar-primary))',
       'sidebar-primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
