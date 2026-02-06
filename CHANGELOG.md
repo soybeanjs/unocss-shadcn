@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.3.4](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.3...v0.3.4) (2026-02-07)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **preset**: update sidebar color variable to use correct reference &nbsp;-&nbsp; by @soybeanjs [<samp>(7c114)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/7c11474)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(fe58e)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/fe58e31)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.3.3](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.2...v0.3.3) (2026-01-18)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
