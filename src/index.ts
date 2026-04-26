@@ -10,6 +10,10 @@ export const presetShadcn = definePreset<Theme>(() => ({
         border-color: hsl(var(--border) / var(--border-alpha, 1));
       }
 
+      button {
+        background-color: transparent;
+      }
+
       body {
         color: hsl(var(--foreground));
         background: hsl(var(--background));
