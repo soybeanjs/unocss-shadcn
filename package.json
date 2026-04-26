@@ -1,25 +1,27 @@
 {
   "name": "@soybeanjs/unocss-shadcn",
-  "type": "module",
   "version": "0.3.4",
-  "packageManager": "pnpm@10.33.2",
   "description": "unocss preset shadcn for Soybean UI",
+  "homepage": "https://github.com/soybeanjs/unocss-shadcn",
+  "bugs": {
+    "url": "https://github.com/soybeanjs/unocss-shadcn/issues"
+  },
+  "license": "MIT",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
     "url": "https://github.com/soybeanjs"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/soybeanjs/unocss-shadcn",
   "repository": {
     "url": "https://github.com/soybeanjs/unocss-shadcn.git"
   },
-  "bugs": {
-    "url": "https://github.com/soybeanjs/unocss-shadcn/issues"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -27,16 +29,16 @@
       "require": "./dist/index.js"
     }
   },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "tsdown",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
     "dev": "tsdown",
-    "lint": "eslint . --fix",
+    "fmt": "oxfmt",
+    "lint": "oxlint . --fix",
     "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm publish --access public",
     "release": "soy release",
@@ -48,10 +50,10 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.7.1",
-    "@soybeanjs/eslint-config": "1.7.5",
     "@types/node": "25.6.0",
-    "eslint": "10.2.1",
     "lint-staged": "16.4.0",
+    "oxfmt": "^0.46.0",
+    "oxlint": "^1.61.0",
     "simple-git-hooks": "2.13.1",
     "tsdown": "0.21.10",
     "tsx": "4.21.0",
@@ -62,6 +64,7 @@
     "pre-commit": "pnpm typecheck && pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
-  }
+    "*": "oxlint . --fix && oxfmt"
+  },
+  "packageManager": "pnpm@10.33.2"
 }

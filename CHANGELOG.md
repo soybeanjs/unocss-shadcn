@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## [v0.3.4](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.3...v0.3.4) (2026-02-07)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
@@ -144,4 +143,3 @@
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
-
