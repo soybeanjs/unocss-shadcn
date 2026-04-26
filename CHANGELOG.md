@@ -1,5 +1,21 @@
 # Changelog
 
+## [v0.4.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.4...v0.4.0) (2026-04-26)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **preset**: add transparent background color for buttons &nbsp;-&nbsp; by @soybeanjs and **Copilot** [<samp>(f8556)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/f8556e2)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(8964c)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/8964c14)
+- **projects**: migrate eslint to oxlint &nbsp;-&nbsp; by @soybeanjs [<samp>(c8953)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/c8953a6)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+[Copilot](mailto:copilot@github.com)
+
 ## [v0.3.4](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.3...v0.3.4) (2026-02-07)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
