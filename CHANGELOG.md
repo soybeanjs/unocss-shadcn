@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.5.0-beta.3](https://github.com/soybeanjs/unocss-shadcn/compare/v0.5.0-beta.2...v0.5.0-beta.3) (2026-05-19)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **theme**: add durations for collapsible animations &nbsp;-&nbsp; by @soybeanjs [<samp>(6dfad)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/6dfade1)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.0-beta.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.5.0-beta.1...v0.5.0-beta.2) (2026-05-19)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
