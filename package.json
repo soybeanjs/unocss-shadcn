@@ -49,14 +49,14 @@
     "unocss": "^66.6.8"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.7.1",
-    "@types/node": "25.6.0",
-    "lint-staged": "16.4.0",
-    "oxfmt": "^0.46.0",
-    "oxlint": "^1.61.0",
+    "@soybeanjs/cli": "1.7.2",
+    "@types/node": "25.9.0",
+    "lint-staged": "17.0.5",
+    "oxfmt": "^0.50.0",
+    "oxlint": "^1.65.0",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.21.10",
-    "tsx": "4.21.0",
+    "tsdown": "0.22.0",
+    "tsx": "4.22.2",
     "typescript": "6.0.3"
   },
   "simple-git-hooks": {
@@ -66,5 +66,5 @@
   "lint-staged": {
     "*": "oxlint . --fix && oxfmt"
   },
-  "packageManager": "pnpm@10.33.2"
+  "packageManager": "pnpm@11.1.3"
 }
