@@ -1,5 +1,20 @@
 # Changelog
 
+## [v0.5.0-beta.1](https://github.com/soybeanjs/unocss-shadcn/compare/v0.4.0...v0.5.0-beta.1) (2026-05-19)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **preset**: remove preflights add collapsible animation keyframes to theme &nbsp;-&nbsp; by @soybeanjs [<samp>(bb8d8)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/bb8d8be)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps and update pnpm to v11 &nbsp;-&nbsp; by @soybeanjs [<samp>(43e54)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/43e54d3)
+- **package**: rename update-pkg script to upkg &nbsp;-&nbsp; by @soybeanjs [<samp>(5cd72)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/5cd72bc)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.3.4...v0.4.0) (2026-04-26)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
