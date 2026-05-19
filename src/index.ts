@@ -3,78 +3,13 @@ import type { Theme } from 'unocss/preset-mini';
 
 export const presetShadcn = definePreset<Theme>(() => ({
   name: 'unocss-preset-shadcn',
-  preflights: [
-    {
-      getCSS: () => `
-      * {
-        border-color: hsl(var(--border) / var(--border-alpha, 1));
-      }
-
-      button {
-        background-color: transparent;
-      }
-
-      body {
-        color: hsl(var(--foreground));
-        background: hsl(var(--background));
-      }`
-    },
-    {
-      getCSS: () => `
-      html.size-xs {
-        font-size: 12px;
-      }
-      html.size-sm {
-        font-size: 14px;
-      }
-      html.size-md {
-        font-size: 16px;
-      }
-      html.size-lg {
-        font-size: 18px;
-      }
-      html.size-xl {
-        font-size: 20px;
-      }
-      html.size-2xl {
-        font-size: 24px;
-      }`
-    },
-    {
-      getCSS: () => `
-      @keyframes shadcn-down { from{ height: 0 } to { height: var(--soybean-accordion-content-height)} }
-      @keyframes shadcn-up { from{ height: var(--soybean-accordion-content-height)} to { height: 0 } }
-      @keyframes shadcn-collapsible-down { from{ height: 0 } to { height: var(--soybean-collapsible-content-height)} }
-      @keyframes shadcn-collapsible-up { from{ height: var(--soybean-collapsible-content-height)} to { height: 0 } }`
-    }
-  ],
-  rules: [
-    [
-      'animate-accordion-down',
-      {
-        animation: 'shadcn-down 0.2s ease-out'
-      }
-    ],
-    [
-      'animate-accordion-up',
-      {
-        animation: 'shadcn-up 0.2s ease-out'
-      }
-    ],
-    [
-      'animate-collapsible-down',
-      {
-        animation: 'shadcn-collapsible-down 0.2s ease-out'
-      }
-    ],
-    [
-      'animate-collapsible-up',
-      {
-        animation: 'shadcn-collapsible-up 0.2s ease-out'
-      }
-    ]
-  ],
   theme: {
+    animation: {
+      keyframes: {
+        'collapsible-down': 'from{ height: 0 } to { height: var(--soybean-collapsible-content-height)}',
+        'collapsible-up': 'from{ height: var(--soybean-collapsible-content-height)} to { height: 0 }'
+      }
+    },
     colors: {
       background: 'hsl(var(--background))',
       foreground: 'hsl(var(--foreground))',
