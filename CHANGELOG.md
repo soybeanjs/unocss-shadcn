@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.5.0-beta.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.5.0-beta.1...v0.5.0-beta.2) (2026-05-19)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **theme**: correct syntax for collapsible animation keyframes &nbsp;-&nbsp; by @soybeanjs [<samp>(e4651)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/e4651c0)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.0-beta.1](https://github.com/soybeanjs/unocss-shadcn/compare/v0.4.0...v0.5.0-beta.1) (2026-05-19)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
