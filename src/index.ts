@@ -12,6 +12,10 @@ export const presetShadcn = definePreset<Theme>(() => ({
       durations: {
         'collapsible-down': '200ms',
         'collapsible-up': '200ms'
+      },
+      timingFns: {
+        'collapsible-down': 'ease-out',
+        'collapsible-up': 'ease-out'
       }
     },
     colors: {
