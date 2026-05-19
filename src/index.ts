@@ -6,8 +6,8 @@ export const presetShadcn = definePreset<Theme>(() => ({
   theme: {
     animation: {
       keyframes: {
-        'collapsible-down': 'from{ height: 0 } to { height: var(--soybean-collapsible-content-height)}',
-        'collapsible-up': 'from{ height: var(--soybean-collapsible-content-height)} to { height: 0 }'
+        'collapsible-down': '{from{ height: 0 } to { height: var(--soybean-collapsible-content-height)}}',
+        'collapsible-up': '{from{ height: var(--soybean-collapsible-content-height)} to { height: 0 }}'
       }
     },
     colors: {
