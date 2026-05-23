@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.6.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.6.1...v0.6.2) (2026-05-23)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **preset**: add Preflight support for conditional CSS generation &nbsp;-&nbsp; by @soybeanjs [<samp>(d1656)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/d1656b9)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.6.1](https://github.com/soybeanjs/unocss-shadcn/compare/v0.6.0...v0.6.1) (2026-05-23)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
