@@ -1,7 +1,5 @@
 allowBuilds:
   esbuild: false
   simple-git-hooks: false
-minimumReleaseAgeExclude:
-  - '@types/node@25.9.0'
-  - tsx@4.22.2
+minimumReleaseAge: 0
 shamefullyHoist: true
