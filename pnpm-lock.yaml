@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@soybeanjs/shadcn-theme':
+        specifier: ^0.3.3
+        version: 0.3.3
       unocss:
         specifier: ^66.7.0
         version: 66.7.0(vite@8.0.14(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(tsx@4.22.3)(yaml@2.9.0))
@@ -758,6 +761,12 @@ packages:
   '@soybeanjs/cli@1.7.2':
     resolution: {integrity: sha512-1N7nEOCmPM7MQYb/C2bldhjj2EMqM31+0uhwYZ4CAXJjuFsX41cQib5DIXXW+4qD6mVYl2XrowFcfr35siOeVw==}
     hasBin: true
+
+  '@soybeanjs/colord@0.5.0':
+    resolution: {integrity: sha512-/BtbFpyeYigJ2bapXk0DOgY9o1Oul26vQgqJDR7kcov8tYlto7DjRgGlf3ffw0ymtQzBNGbQXRDn4sMsm4REOQ==}
+
+  '@soybeanjs/shadcn-theme@0.3.3':
+    resolution: {integrity: sha512-Xba2R0BjvRf5JevM5+FzHRAvnpepDbjIWoRO/u1M24fhW2eNp6pSjSGJClb9uDAk0UgLXUFk1aPPG4VSePyc3w==}
 
   '@tybys/wasm-util@0.10.2':
     resolution: {integrity: sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==}
@@ -2054,6 +2063,12 @@ snapshots:
       tinyglobby: 0.2.16
     transitivePeerDependencies:
       - magicast
+
+  '@soybeanjs/colord@0.5.0': {}
+
+  '@soybeanjs/shadcn-theme@0.3.3':
+    dependencies:
+      '@soybeanjs/colord': 0.5.0
 
   '@tybys/wasm-util@0.10.2':
     dependencies:

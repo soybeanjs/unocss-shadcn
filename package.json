@@ -46,6 +46,7 @@
     "upkg": "soy ncu"
   },
   "dependencies": {
+    "@soybeanjs/shadcn-theme": "^0.3.3",
     "unocss": "^66.7.0"
   },
   "devDependencies": {
