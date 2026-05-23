@@ -1,4 +1,4 @@
-import { definePreset } from 'unocss';
+import { definePreset, Preflight } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
 import { createShadcnTheme } from '@soybeanjs/shadcn-theme';
 import type { ThemeOptions } from '@soybeanjs/shadcn-theme';
@@ -11,9 +11,10 @@ export interface ShadcnPresetOptions extends ThemeOptions {
 }
 
 export const presetShadcn = definePreset<ShadcnPresetOptions, Theme>((options?: ShadcnPresetOptions) => {
-  return {
-    name: 'unocss-preset-shadcn',
-    preflights: [
+  const preflights: Preflight[] = [];
+
+  if (options?.generated) {
+    preflights.push(
       {
         getCSS: () => `
 * {
@@ -40,7 +41,12 @@ button {
           return css;
         }
       }
-    ],
+    );
+  }
+
+  return {
+    name: 'unocss-preset-shadcn',
+    preflights,
     theme: {
       animation: {
         keyframes: {
