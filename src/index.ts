@@ -15,6 +15,20 @@ export const presetShadcn = definePreset<ShadcnPresetOptions, Theme>((options?: 
     name: 'unocss-preset-shadcn',
     preflights: [
       {
+        getCSS: () => `
+* {
+  border-color: hsl(var(--border) / var(--border-alpha, 1));
+}
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+}
+button {
+  background-color: transparent;
+}
+`
+      },
+      {
         getCSS: () => {
           let css = '';
 
