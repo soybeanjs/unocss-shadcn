@@ -2,33 +2,50 @@ import { definePreset, Preflight } from 'unocss';
 import type { Theme } from 'unocss/preset-mini';
 import { createShadcnTheme } from '@soybeanjs/shadcn-theme';
 import type { ThemeOptions } from '@soybeanjs/shadcn-theme';
+import resetStyle from './reset.css?raw';
+import globalStyle from './global.css?raw';
 
 export interface ShadcnPresetOptions extends ThemeOptions {
   /**
    * whether to generate the CSS for the theme
    */
   generated?: boolean;
+  /**
+   * whether to include the global CSS preflight (including border color, background color, etc.)
+   *
+   * only effective when `generated` is true, as the global CSS relies on the generated CSS variables
+   *
+   * @default true
+   */
+  globalCss?: boolean;
+  /**
+   * whether to include the reset CSS preflight (including box-sizing, border-width, etc.)
+   *
+   * only effective when `generated` is true, as the reset CSS relies on the generated CSS variables
+   *
+   * @default true
+   */
+  resetCss?: boolean;
 }
 
 export const presetShadcn = definePreset<ShadcnPresetOptions, Theme>((options?: ShadcnPresetOptions) => {
+  const { globalCss = true, resetCss = true } = options || {};
+
   const preflights: Preflight[] = [];
 
   if (options?.generated) {
+    if(resetCss) {
+      preflights.push({
+        getCSS: () => resetStyle
+      });
+    }
+    if(globalCss) {
+      preflights.push({
+        getCSS: () => globalStyle
+      });
+    }
+
     preflights.push(
-      {
-        getCSS: () => `
-* {
-  border-color: hsl(var(--border) / var(--border-alpha, 1));
-}
-body {
-  color: hsl(var(--foreground));
-  background: hsl(var(--background));
-}
-button {
-  background-color: transparent;
-}
-`
-      },
       {
         getCSS: () => {
           let css = '';
