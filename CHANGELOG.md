@@ -1,5 +1,19 @@
 # Changelog
 
+## [v0.7.0](https://github.com/soybeanjs/unocss-shadcn/compare/v0.6.2...v0.7.0) (2026-05-27)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **css**: add global and reset CSS support with raw CSS loader &nbsp;-&nbsp; by @soybeanjs [<samp>(b60a7)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/b60a746)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(ffaed)</samp>](https://github.com/soybeanjs/unocss-shadcn/commit/ffaedc0)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.6.2](https://github.com/soybeanjs/unocss-shadcn/compare/v0.6.1...v0.6.2) (2026-05-23)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
